@@ -1,8 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# WEBPACK TEMPLATE^
+# Leaderboard
 
-web pack template to use on future webpack projects 
+The leaderboard website displays scores submitted by different players
+
 ## Getting Started
 
 - Clone the repo.

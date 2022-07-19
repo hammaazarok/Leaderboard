@@ -1,10 +1,27 @@
 import './index.css';
-function component() {
-    const divElement = document.createElement('div');
-    const h2 = document.createElement('h2');
-    h2.innerText = 'My first webpack setup';
-    divElement.appendChild(h2);
-    return divElement;
-}
+import addScore from './add-score.js';
 
-document.body.appendChild(component());
+const newPromise = new Promise((Resolve, Reject) => {
+  const scores = [{
+    name: 'hamma',
+    score: '79',
+  }, {
+    name: 'mohamed',
+    score: '70',
+  }];
+
+  if (scores.length > 0) {
+    Resolve(scores);
+  } else {
+    Reject(new Error('no Data'));
+  }
+});
+
+newPromise.then(
+  (value) => {
+    value.forEach((score, id) => {
+      addScore(score.name, score.score, id);
+    });
+  },
+  (error) => { throw error; },
+);
