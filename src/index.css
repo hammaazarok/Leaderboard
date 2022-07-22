@@ -2,6 +2,7 @@ body {
   margin: 0 10%;
   background-color: #2d4059;
 }
+
 .wrapper {
   display: flex;
   width: 100%;
@@ -35,7 +36,7 @@ h1 {
 }
 
 .color1 {
-    background-color: #8db174;
+  background-color: #8db174;
 }
 
 p {
@@ -65,7 +66,7 @@ p {
 .add-form input {
   padding: 5px;
   height: 30px;
-  color: #f9f9f9;
+  color: #000;
   border: 1px solid #96bb7c;
   border-radius: 5px;
   filter: drop-shadow(1px 1px 1px #61b922);
@@ -97,4 +98,15 @@ h2 {
   color: #fff;
   border: 1px solid #96bb7c;
   border-radius: 5px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    flex-direction: column;
+  }
 }

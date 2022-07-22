@@ -11,13 +11,17 @@ refresh.addEventListener('click', () => {
 
 const submit = document.querySelector('.submit');
 submit.addEventListener('click', () => {
-  const user = document.querySelector('#user').value;
-  const score = document.querySelector('#score').value;
-  const error  = document.querySelector('.error');
-  if(user || score === ''){
-error.innerHTML = ''
-  }else{
+  const userElem = document.querySelector('#user');
+  const scoreElem = document.querySelector('#score');
+  const user = userElem.value;
+  const score = scoreElem.value;
+
+  const error = document.querySelector('.error');
+  if (user === '' || score === '') {
+    error.innerHTML = 'Error : please enter value in both name and score';
+  } else {
     submitScore(user, score);
+    userElem.value = '';
+    scoreElem.value = '';
   }
-  
 });
