@@ -1,7 +1,16 @@
+body {
+  margin: 0 10%;
+  background-color: #2d4059;
+}
+
 .wrapper {
   display: flex;
   width: 100%;
   gap: 15px;
+}
+
+h1 {
+  color: #fff;
 }
 
 .head {
@@ -12,11 +21,22 @@
 
 .leader {
   flex: 1;
+  background-color: aliceblue;
+  padding: 15px;
+  border: 1px solid #96bb7c;
+  border-radius: 5px;
+  filter: drop-shadow(1px 2px 1px #61b922);
 }
 
 .leader-item {
   display: flex;
-  border: 1px solid;
+  border: 1px solid #96bb7c;
+  border-radius: 1px;
+  justify-content: space-evenly;
+}
+
+.color1 {
+  background-color: #8db174;
 }
 
 p {
@@ -30,20 +50,63 @@ p {
 
 .add {
   flex: 1;
+  background-color: aliceblue;
+  padding: 15px;
+  border: 1px solid #96bb7c;
+  border-radius: 5px;
+  filter: drop-shadow(1px 2px 1px #61b922);
 }
 
 .add-form {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
 }
 
-.add-btn {
+.add-form input {
+  padding: 5px;
+  height: 30px;
+  color: #000;
+  border: 1px solid #96bb7c;
+  border-radius: 5px;
+  filter: drop-shadow(1px 1px 1px #61b922);
+}
+
+.submit {
   width: 75px;
   height: 30px;
   margin-left: auto;
 }
 
 .gray {
-  background-color: rgb(187, 187, 187);
+  background-color: #96bb7c;
+}
+
+h2 {
+  color: #96bb7c;
+}
+
+.btn {
+  background-color: #96bb7c;
+  color: #fff;
+  border: 1px solid #61b922;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #61b922;
+  color: #fff;
+  border: 1px solid #96bb7c;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    flex-direction: column;
+  }
 }

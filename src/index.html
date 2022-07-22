@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leader Board</title>
+    <title>Leader board</title>
     <link rel="stylesheet" href="index.css" />
   </head>
 
   <body>
-    <h1>Leader Board</h1>
+    <h1>Leader board</h1>
     <div class="wrapper">
         <div class="leader">
             <div class="head">
                 <h2 class="title">Resent scores</h2>
-                <button class="refresh">Refresh</button>
+                <button class="refresh btn">Refresh</button>
               </div>
           <div id="leaders-container" class="leaders-container">
           </div>
@@ -26,8 +26,9 @@
         <form class="add-form" action="#">
           <input id="user" type="text" name="user" placeholder="Your Name" />
           <input id="score" type="text" name="score" placeholder="Your Score" />
-          <button type="button" class="submit">Submit</button>
+          <button type="button" class="submit btn">Submit</button>
         </form>
+        <p class="error"></p>
       </div>
     </div>
   </body>
